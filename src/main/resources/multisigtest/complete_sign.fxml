@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="673.0" style="" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="multisigtest.CompleteSignController">
+  <children>
+    <VBox alignment="CENTER_LEFT" layoutY="53.0" prefHeight="247.0" prefWidth="600.0" spacing="20.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <children>
+            <HBox fx:id="topHBox" alignment="CENTER_LEFT" spacing="15.0">
+               <children>
+              <Label fx:id="titleLabel" text="Contract File">
+                <font>
+                  <Font size="25.0" />
+                </font>
+              </Label>
+                  <TextField fx:id="contractFile" prefHeight="25.0" prefWidth="272.0" promptText="/Volumes/Home/EEP/wallet/share/contract.dat" text="/Volumes/Home/EEP/wallet/share/contract.dat" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="15.0">
+               <children>
+                  <Label text="Send to">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+              <TextField fx:id="address" maxWidth="1.7976931348623157E308" promptText="mwKrrU6TWKjiQAhtCo6bmgTpEaiyP2DgGZ" text="mwKrrU6TWKjiQAhtCo6bmgTpEaiyP2DgGZ" HBox.hgrow="ALWAYS">
+                <VBox.margin>
+                  <Insets />
+                </VBox.margin>
+              </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="15.0">
+               <children>
+                  <Label text="Server signature file location">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="signatureFile" prefHeight="25.0" prefWidth="272.0" promptText="/Volumes/Home/EEP/wallet/share/signature-server.dat" text="/Volumes/Home/EEP/wallet/share/signature-server.dat" />
+               </children>
+            </HBox>
+        <HBox alignment="CENTER_RIGHT" fillHeight="true" prefHeight="30.0" prefWidth="600.0" spacing="15.0" VBox.vgrow="NEVER">
+          <children>
+            <Button fx:id="cancelBtn" cancelButton="true" mnemonicParsing="false" onAction="#cancel" prefWidth="79.0" text="Close" />
+            <Button fx:id="completeSignBtn" defaultButton="true" mnemonicParsing="false" onAction="#completeSign" prefHeight="25.0" prefWidth="98.0" text="Complete Sign" />
+          </children>
+        </HBox>
+      </children>
+      <effect>
+        <DropShadow />
+      </effect>
+         <padding>
+            <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+         </padding>
+    </VBox>
+  </children>
+</AnchorPane>
